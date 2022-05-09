@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+body{
+  overflow: hidden;
+  background-color: rgb(110, 110, 55);
+  font-family: '游明朝', 'Courier New', Courier, monospace;
+}
+
+/* -------------------- */
+
+.image{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .5;
+}
+
+.image img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all .5s;
+}
+
+.image img.clear{
+  opacity: 0;
+}
+
+/* -------------------- */
+
+#menu{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(165, 5, 5);
+  color: #fff;
+  z-index: 3;
+  transform: translateY(-1000px);
+  transition: transform .5s;
+  overflow-y: scroll;
+}
+
+#menu.open{
+  transform: none;
+}
+
+#menu h1{
+  margin: 100px 0 0 50px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 3;
+}
+
+#menu h1:nth-of-type(2), #menu h1:nth-of-type(3){
+  margin-top: 0;
+}
+
+#menu ul{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#menu ul li{
+  width: 50%;
+  font-size: 14px;
+  line-height: 2;
+  text-align: center;
+  border-top: 8px solid #ddd;
+  border-left: 8px solid #ddd;
+  border-bottom: 8px solid #bbb;
+  border-right: 8px solid #bbb;
+  background-color: #fff;
+  color: #000;
+}
+
+#menu ul li a{
+  display: block;
+}
+
+#menu small{
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 5;
+}
+
+/* -------------------- */
+
+header{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+}
+
+header i{
+  position: relative;
+  margin-right: 32px;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+}
+
+header i.hidden{
+  display: none;
+}
+
+/* -------------------- */
+
+#caption{
+  position: relative;
+  margin-top: 32px;
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+  letter-spacing: .1em;
+}
+
+#caption section{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: all .5s;
+}
+
+#caption section.clear{
+  opacity: 0;
+}
+
+#caption section h1{
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+#caption section p{
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* -------------------- */
+
+main{
+  position: absolute;
+  bottom: -900px;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  margin-left: -500px;
+  border-radius: 50%;
+  transition: transform .5s;
+}
+
+main a{
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+main .top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+main .bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: rotate(180deg);
+}
+
+main .left{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100px;
+  margin: auto 0;
+  transform: rotate(270deg);
+}
+
+main .right{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -100px;
+  margin: auto 0;
+  transform: rotate(90deg);
+}
+
+main a h1{
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+/* -------------------- */
+
+.btn{
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.btn i{
+  font-size: 24px;
+  cursor: pointer;
+  pointer-events: all;
+}
