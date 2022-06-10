@@ -15,7 +15,6 @@ body{
   left: 0;
   right: 0;
   opacity: .5;
-  overflow: hidden;
 }
 
 .image img{
@@ -167,11 +166,13 @@ main{
 }
 
 main a{
+  position: relative;
   width: 250px;
   height: 50px;
   text-align: center;
   border: 1px solid #000;
   background-color: #fff;
+  overflow: hidden;
 }
 
 main .top{
