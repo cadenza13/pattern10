@@ -7,6 +7,7 @@
   const work = document.getElementById('work');
   const profile = document.getElementById('profile');
   const recruit = document.getElementById('recruit');
+  const contact = document.getElementById('contact');
   const titleText = document.querySelector('.titleText');
   const titleImage = document.querySelector('.titleImage');
   
@@ -17,6 +18,7 @@
     if(work) work.classList.add('appear');
     if(profile) profile.classList.add('appear');
     if(recruit) recruit.classList.add('appear');
+    if(contact) contact.classList.add('appear');
     if(titleText) titleText.classList.add('appear');
     if(titleImage) titleImage.classList.add('appear');
   }, 200);

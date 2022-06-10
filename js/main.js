@@ -1,7 +1,7 @@
 'use strict';
 
 {
-  const main = document.querySelector('main');
+  const main = document.querySelector('main > ul');
   const img = document.querySelectorAll('.image > img');
   const section = document.querySelectorAll('#caption > section');
   const leftBtn = document.getElementById('left');
