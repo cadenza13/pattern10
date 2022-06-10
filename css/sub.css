@@ -79,6 +79,7 @@ header{
 
 header i{
   position: relative;
+  margin-top: 10px;
   margin-right: 32px;
   font-size: 32px;
   cursor: pointer;
