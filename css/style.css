@@ -15,6 +15,7 @@ body{
   left: 0;
   right: 0;
   opacity: .5;
+  overflow: hidden;
 }
 
 .image img{
@@ -162,6 +163,7 @@ main{
   margin-left: -500px;
   border-radius: 50%;
   transition: transform .5s;
+  /* overflow: hidden; */
 }
 
 main a{
