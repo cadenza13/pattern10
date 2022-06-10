@@ -408,7 +408,6 @@ main .titleImage{
   display: block;
   width: 90%;
   max-height: 420px;
-  /* height: 420px; */
   object-fit: cover;
   margin: 24px auto 0;
   transform: translateY(15px);
@@ -454,7 +453,7 @@ footer small{
   line-height: 5;
 }
 
-@media(max-width: 450px){
+@media(max-width: 600px){
   main .title h1{
     font-size: 26px;
   }
@@ -465,5 +464,9 @@ footer small{
 
   main #contact p{
     font-size: 16px;
+  }
+
+  main #contact #icons i{
+    padding: 4px 8px 0;
   }
 }

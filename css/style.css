@@ -240,7 +240,7 @@ main a h1{
 
 .btn{
   position: absolute;
-  bottom: 50px;
+  top: 75%;
   left: 0;
   right: 0;
   width: 300px;
