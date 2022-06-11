@@ -386,6 +386,10 @@ main #contact #icons i{
   background-color: rgb(50, 180, 50);
 }
 
+_::-webkit-full-page-media, _:future, :root main #contact #icons i{
+  padding: 8px 4px 0;
+}
+
 main #contact  #icons a + a > i{
   background: linear-gradient(to bottom, rgb(180, 60, 150), rgb(240, 200, 100))
 }
@@ -460,14 +464,14 @@ footer small{
   }
   
   main .title h1::after{
-    font-size: 22px;
+    font-size: 20px;
   }
 
   main #contact p{
     font-size: 16px;
   }
 
-  main #contact #icons i{
+  /* main #contact #icons i{
     padding: 4px 8px 0;
-  }
+  } */
 }
