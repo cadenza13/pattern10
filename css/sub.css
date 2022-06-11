@@ -387,7 +387,7 @@ main #contact #icons i{
 }
 
 _::-webkit-full-page-media, _:future, :root main #contact #icons i{
-  padding: 8px 4px 0;
+  padding: 8px 6px 0 8px;
 }
 
 main #contact  #icons a + a > i{

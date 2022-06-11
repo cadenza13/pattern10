@@ -6,6 +6,55 @@ body{
   font-family: '游明朝', 'Courier New', Courier, monospace;
 }
 
+#mask{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 10;
+  transition: opacity 1.5s;
+}
+
+#mask.clear{
+  opacity: 0;
+}
+
+#mask.hidden{
+  display: none;
+}
+
+#mask img{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 150px;
+  height: 50px;
+  margin: auto;
+}
+
+#mask #logomask{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 200px;
+  height: 75px;
+  margin: auto;
+  background-color: #fff;
+  z-index: 11;
+  transform: none;
+  transition: all 2s linear;
+}
+
+#mask #logomask.move{
+  transform: translateX(200px);
+}
+
 /* -------------------- */
 
 .image{

@@ -7,6 +7,9 @@
   const leftBtn = document.getElementById('left');
   const rightBtn = document.getElementById('right');
 
+  const mask = document.getElementById('mask');
+  const logoMask = document.getElementById('logomask');
+
   let currentContent = 0;
 
   function imageChange(){
@@ -45,4 +48,14 @@
 
     imageChange();
   });
+
+  setTimeout(() =>{
+    logoMask.classList.add('move');
+    setTimeout(() =>{
+      mask.classList.add('clear');
+      setTimeout(() =>{
+        mask.classList.add('hidden');
+      }, 1600);
+    }, 2500);
+  }, 100);
 }
