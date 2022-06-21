@@ -3,7 +3,7 @@
 body{
   overflow: hidden;
   background-color: rgb(110, 110, 55);
-  font-family: '游明朝', 'Courier New', Courier, monospace;
+  font-family: '游明朝', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #mask{
@@ -203,25 +203,12 @@ header i.hidden{
 
 /* -------------------- */
 
-/* main{
-  position: absolute;
-  bottom: -900px;
-  left: 50%;
-  width: 1000px;
-  height: 1000px;
-  margin-left: -500px;
-  border-radius: 50%;
-  transition: transform .5s;
-} */
-
 main{
   position: absolute;
   top: 50%;
   bottom: 0;
   left: 0;
   right: 0;
-  /* background-color: aqua; */
-  /* border-top: 10px solid #000; */
   overflow: hidden;
 }
 
