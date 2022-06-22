@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-  font-family: '游明朝', constantia, sans-serif, 'Courier New', Courier;
+  font-family: '游明朝', constantia, sans-serif;
 }
 
 /* -------------------- */
@@ -374,21 +374,26 @@ main #contact #icons{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 120px;
+  width: 150px;
   margin: 24px 0 0 12px;
 }
 
 main #contact #icons i{
+  display: block;
   font-size: 32px;
-  padding: 4px 8px;
+  /* padding: 4px 8px; */
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
   border-radius: 12px;
   color: #fff;
   background-color: rgb(50, 180, 50);
 }
 
-_::-webkit-full-page-media, _:future, :root main #contact #icons i{
+/* _::-webkit-full-page-media, _:future, :root main #contact #icons i{
   padding: 8px 6px 0 8px;
-}
+} */
 
 main #contact  #icons a + a > i{
   background: linear-gradient(to bottom, rgb(180, 60, 150), rgb(240, 200, 100))

@@ -3,7 +3,7 @@
 body{
   overflow: hidden;
   background-color: rgb(110, 110, 55);
-  font-family: '游明朝', constantia, sans-serif, 'Courier New', Courier;
+  font-family: '游明朝', constantia, sans-serif;
 }
 
 #mask{
