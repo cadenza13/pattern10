@@ -3,7 +3,7 @@
 body{
   overflow: hidden;
   background-color: rgb(110, 110, 55);
-  font-family: '游明朝', constantia, serif;
+  font-family: '游明朝', 'ヒラギノ明朝 ProN', serif;
 }
 
 #mask{
